@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #ebf5fc;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  margin: 3rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+main .card {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  padding: 10px;
+  background-color: #ebf5fc;
+  -webkit-box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+main .card img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

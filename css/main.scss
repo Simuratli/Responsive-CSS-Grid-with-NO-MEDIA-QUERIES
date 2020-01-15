@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+    margin: 0;
+    background-color: #ebf5fc;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    margin: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+    .card {
+        border-radius: 10px;
+        transition: transform 1s;
+        padding: 10px;
+        background-color: #ebf5fc;
+        box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 20px rgba(0, 0, 0, 0.05);
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
